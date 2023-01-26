@@ -3,8 +3,15 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'CompletelyDotty';
+  title = 'Completely Dotty';
+
+  dotsFired: boolean | undefined;
+  bounceDirection: string | undefined;
+
+  fireDotsFired() {
+    this.dotsFired = true;
+  }
 }
